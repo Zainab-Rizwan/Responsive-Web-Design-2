@@ -11,4 +11,4 @@ Projects
 
 Tribute Page
 ---------------------
-![image](https://github.com/Zainab-Rizwan/Responsive-Web-Design-2/blob/fd40a7a9edd8f13cf13a1e9353740e976952037b/Tribute%20Page/Overview.png)
+![image](https://github.com/Zainab-Rizwan/Responsive-Web-Design-2/blob/134442327949a7b6f861f12197bae6f5aec4df33/Tribute%20Page/overview.png)
