@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+		body
+		{
+			display: block;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+
+	   #moon{
+		     position: relative;
+		     left: 50%;
+		     transform: translate(-50%, -50%);
+		     height: 80px;
+		     width: 80px;
+		     box-shadow: -15px 15px 0 5px white  ;
+		     border-radius: 50%;
+		     overflow-wrap: break-word;
+		     margin-bottom: 1em !important;
+	   }
+		form
+		{
+			margin: 10% 20% 10% 20%;
+			height: 100%;
+			padding-bottom: 2em;
+			border: 1px solid #d0cdd1;
+			border-radius: 2em;
+			border-top: none;
+
+		}
+		.rectangle
+		{
+			height: 40%;
+			border-radius: 2em 2em 0em 0em;
+			margin-bottom: 3%;
+	        position: relative;
+	        padding: 1em;
+	        color: white;
+	        background: rgb(172,140,209);
+			background: linear-gradient(90deg, #6D5B9F 0%, #9E81AF 35%, #f0c9dd 100%);
+		}
+		#title
+		{
+			position: relative;
+			text-align: center;
+			font-size: 28px;
+		}
+		.form-group
+		{
+			margin: 3% 8% 3% 8%;
+		}
+		label
+		{
+			float: left;
+		}
+		.form-control:focus {
+		  border-color: rgb(172,140,209);
+		  box-shadow: none;
+		}
+		.form-control
+		{
+			margin-bottom: 1%;
+		}
+		select
+		{
+			width: 35%;
+			height: 2.25em;
+			border:0.5px solid #d0cdd1; 
+		}
+
+
+		.btn
+		{
+			color: white;
+	        background: rgb(172,140,209);
+			background: linear-gradient(90deg, #6D5B9F 0%, #9E81AF 35%, #f0c9dd 100%);
+			width: 25%;
+			height: 3.5em;
+			border:0px solid white ;
+			border-radius: 2em;
+		}
+		.btn:hover
+		{
+			color: #6D5B9F;
+			background:white;
+			border:1px solid #6D5B9F;
+			transition: 0.5s;
+
+		}
+
+		.checkbox
+		{
+			margin-right:10px; 
+		}
+
+		.radio
+		{
+			margin-right:10px; 
+		}
+		textarea {
+		  height: 10vh;
+		  box-sizing: border-box;
+		}
+	</style>
+	
+</head>
+<body>
+	<form id="survey-form">
+		  <div class="rectangle">
+		  	<br><br>
+		  	<div id="moon">	</div>
+		  	<h1 id="title">freeCodeCamp Survey Form</h1>
+		  </div>
+
+		  <p id="description">Thank you for taking the time to help us improve the platform</p>
+		  <div class="form-group">
+		    <label for="name" id="name-label">Name</label>
+		    <input type="name" class="form-control" id="name" placeholder="Enter your name" required="">
+		  <br>
+		    <label for="email" id="email-label">Email address</label>
+		    <input type="email" class="form-control" id="email" placeholder="Enter email" required="">
+		  <br>
+		    <label for="number" id="number-label">Age (optional)</label>
+		    <input type="number" class="form-control" id="number"  min="15" max="50" placeholder="Enter your age">
+		  <br>
+
+	       <div>
+	       		<label for="checkboxes" id="checkbox-label">What would you like to see improved?</label><br><br>
+	       		<div id="checkboxes" style="float: left; display:inline-block; margin-top: -2%;">
+			        <label for="Front"><input id="Front" class="checkbox" type="checkbox" name="improve" value="Front">Front-end Projects</label><br>
+				    <label for="Back"><input id="Back"  class="checkbox" type="checkbox" name="improve" value="Back">Back-end Projects</label><br>
+				    <label for="Data"><input id="Data"  class="checkbox" type="checkbox" name="improve" value="Data">Data Visualization Commitee</label><br>
+				    <label for="Challenges"><input id="Challenges"  class="checkbox" type="checkbox" name="improve" value="Challenges">Challenges</label><br>
+				    <label for="Open"><input id="Open"  class="checkbox" type="checkbox" name="improve" value="Open">Open Source Community</label><br>
+				    <label for="Gitter"><input id="Gitter" class="checkbox" type="checkbox" name="improve" value="Gitter">Gitter help rooms</label><br>
+				    <label for="City"><input id="City" class="checkbox" type="checkbox" name="improve" value="City">City Meetup</label><br>
+				    <label for="Courses"><input id="Courses" class="checkbox" type="checkbox" name="improve" value="Courses">Additional Courses</label><br>
+			    </div>
+		   </div>
+
+		   <br><br><br><br><br><br><br><br><br><br><br>
+		   <div>
+		    	<label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+		        <select id="dropdown"  class="form-control">
+		            <option disabled selected value>Select an option</option>
+		            <option value="student">Student</option>
+		            <option value="job">Full-time Job</option>
+		            <option value="learner">Full-Time Learner</option>
+		            <option value="prefer">Prefer not to say</option>
+		            <option value="other">Other</option>
+		        </select>
+	       </div>
+	       <br>
+
+		   <div>
+	       		<label for="radios" id="radio-label" tyle="margin-left: 0px; !important">Would you recommend freeCodeCamp to a friend?</label><br><br>
+	       		<div id="radios" style="float: left; display:inline-block; margin-top: -2%;" >
+			        <label for="Definitely"><input value="Definitely" type="radio" name="recommend" class="radio">Definitely</label><br>
+	    			<label for="Maybe"><input value="Maybe" type="radio" name="recommend" class="radio">Maybe</label><br>
+	    			<label for="ns"><input value="ns" type="radio" name="recommend" class="radio">Not Sure</label><br>
+			    </div>
+		   </div>
+		   <br><br><br><br>
+
+	      <div>
+	      		<labeL><h6  for="comment" id="comment">Any comments or suggestions?</h6></labeL>
+		      	<textarea class="form-control" id="comment" >Enter your comments here</textarea>
+	      </div>
+	      <br>
+		</div>	   
+	   <button id="submit" type="submit" class="btn">Submit</button>
+	   <br><br>
+	</form>
+</body>
+
+<!---<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>--->
+
+</html>
