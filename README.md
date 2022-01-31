@@ -15,4 +15,4 @@ Tribute Page
 
 Survey Form
 ---------------------
-![image](https://github.com/Zainab-Rizwan/Responsive-Web-Design-2/blob/c754c6ea9704fdb0607902938311c64df889a54a/Survey%20Page/overview.png)
+![image](https://github.com/Zainab-Rizwan/Responsive-Web-Design-2/blob/711466975b9f1fa2be4aefd88cd5ac4fd720dc2b/Survey%20Page/overview.png)
