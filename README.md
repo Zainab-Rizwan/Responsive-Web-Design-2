@@ -16,3 +16,6 @@ Tribute Page
 Survey Form
 ---------------------
 ![image](https://github.com/Zainab-Rizwan/Responsive-Web-Design-2/blob/6270ea23d4face8e6e60bb3ac9298960b54a2fce/Survey%20Page/overview.png)
+
+Landing Page
+---------------------
